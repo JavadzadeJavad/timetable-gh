@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="UTF-8">
+	<meta name="viewport" contetnt="width=device-width">
+
+	<title>1 Task. Timetable</title>
+	
+	<link rel="stylesheet" href="appStyle.css">
+	<link rel="stylesheet" href="libs/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+	<header class="main-head">	
+
+		<div class="container">
+			<div class="row">
+
+				<div class="menu-line ">
+					<nav  class="navbar navbar-default navbar-inverse navbar-fixed-top" >
+					<div class="container">
+
+						<div class=" logo  col-lg-4 col-md-2 col-ms-4 col-xs-4">
+							<a  href="http://www.yandex.ru"><span>Я</span>ндекс</a>
+						</div>
+
+						<div class="header-menu center col-lg-8 col-md-10 hidden-sm hidden-xs">
+								<ul>
+								<li class="scrollTo-timetable"><p>Расписание</p></li>
+								<li class="scrollTo-develp"><p>Школа разработки интерфейсов</p></li>
+								<li class="scrollTo-mob-develp"> <p>Школа мобильной разработки</p> </li>
+								<li class="scrollTo-mob-design"> <p>Школа мобильного дизайна</p></li>
+							</ul>
+						</div>
+
+						<div class="popup-menu-container hidden-lg hidden-md">
+							<input id="popup-menu-toggle" type="checkbox">
+							<label class="popup-btn cwhite" for="popup-menu-toggle">
+								<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+							</label>
+							<label class="popup-menu-backdrop" for="popup-menu-toggle"></label>
+
+							<div class="popup-menu-content">
+								<ul>
+									<li class="scrollTo-timetable"><p>Расписание</p></li>
+									<li class="scrollTo-develp"><p>Школа разработки интерфейсов</p></li>
+									<li class="scrollTo-mob-develp" ><p>Школа мобильной разработки</p></li>
+									<li class="scrollTo-mob-design"><p>Школа мобильного дизайна</p></li>
+								</ul>
+								<label class="popup-content-btn" for="popup-menu-toggle">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</label> 
+							</div>
+						</div>
+
+					</div>
+					</nav>
+				</div>
+
+				<div class="head-line center col-md-12 col-ms-12 col-xs-12">
+					<div class="head-text  cwhite"> 
+						<span>Расписание лекций проекта "Мобилизация"
+						</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+	</header>
+
+	<section id="timetable">
+		<div class="container ">
+
+			<div class="schools-list-container center">
+				<input id="schools-list-toggle" type="checkbox">
+  				<label class="schools-list-btn " for="schools-list-toggle">Курсы</label>
+				<label class="schools-list-backdrop" for="schools-list-toggle"></label>
+				<div class="schools-list">
+					<ul>
+						<li class="develp-intreface">
+							<input id="develp-intreface" name="change-course" type="radio">
+  							<label class="develp-intreface" for="develp-intreface">Школа разработки интерфейсов</label>
+  						</li>	
+						<li class="mob-develp">
+							<input id="mob-develp" name="change-course" type="radio">
+  							<label class="mob-develp" for="mob-develp">Школа мобильной разработки</label>
+  						</li>
+						<li class="mob-design">
+							<input id="mob-design" name="change-course" type="radio">
+  							<label class="mob-design" for="mob-design">Школа мобильного дизайна</label>
+  						</li>
+					</ul> 
+					<label class="list-close-btn" for="schools-list-toggle">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</label> 
+				</div>
+			</div>
+
+			<div class="table-section">
+				<table class="timetable-table col-md-12 col-xs-12">
+				<thead>
+					<tr>
+						<th class=" head-date center"><span>Дата</span></th>
+						<th class="dev center"><span>Школа разработки интерфейсов</span></th>
+						<th class="mob-dev center"><span>Школа мобильной разработки</span></th>
+						<th class="mob-des center"><span>Школа мобильного дизайна</span></th>
+					</tr>
+				</thead>
+
+				<tbody class="center">
+				<tr>
+					<td class="month center" colspan="4"> <span>Октябрь</span></td>
+				</tr>
+				<tr>
+					<td class="date-join-course" >16</td>
+					<td class="join-lecture" colspan="3"><span>Вступительная лекция</span></td>
+				</tr>
+				<tr>
+					<td class="mob-des date"  data-label="Дата">18</td>
+					<td class="empty dev" data-label="Школа разработки интерфейсов"></td>
+					<td class="empty mob-dev" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left" style="list-style: none;">
+							<li><a class="canetr" href="https://events.yandex.ru/lib/talks/4158/">Идея, исследование, концепт. Часть 1. </a>
+							<br><a href="https://events.yandex.ru/lib/people/8953757/">(Антон Тен)</a></li>
+							<li><a class="canetr" href="https://events.yandex.ru/lib/talks/4159/">Идея, исследование, концепт. Часть 2. </a>
+							<br><a href="https://events.yandex.ru/lib/people/8953757/">(Антон Тен)</a></li></li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td  class="mob-dev date" data-label="Дата">19</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+							<li><a class="canetr" href="https://events.yandex.ru/lib/talks/4160/">Java Blitz. Часть 1.</a>
+							<br><a href="https://events.yandex.ru/lib/people/3768719/">(Эдуард Мацуков)</a>
+							</li>
+							<li><a class="canetr" href="https://events.yandex.ru/lib/talks/4161/">Git & Workflow</a>
+							<br><a href="https://events.yandex.ru/lib/people/8979250/">(Дмитрий Складнов)</a>
+							</li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+
+				<tr>
+					<td  class="dev date" data-label="Дата">20</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4162/">Адаптивная вёрстка</a>
+							<br><a href="https://events.yandex.ru/lib/people/9000962/">(Дмитрий Душкин)</a>
+							</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td  class="mob-dev mob-des date" data-label="Дата">25</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4168/">Java Blitz. Часть 2.</a>
+							<br><a href="https://events.yandex.ru/lib/people/3768719/">(Эдуард Мацуков)</a>
+							</li>
+
+							<li><a href="https://events.yandex.ru/lib/talks/4169/">MyFirstApp. Часть 1.</a>
+							<br><a href="https://events.yandex.ru/lib/people/9149820/">(Роман Григорьев)</a>
+							</li>
+						</ul>
+					</td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4167/">Особенности проектирования мобильных интерфейсов</a>
+							<br><a href="https://events.yandex.ru/lib/people/9123538/">(Васюнин Николай)</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td  class="dev date" data-label="Дата">27</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4172/">Работа с сенсорным пользовательским вводом</a>
+							<br><a href="https://events.yandex.ru/lib/people/9000962/">(Дмитрий Душкин)</a>
+							</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="month center" colspan="4"><span> Ноябрь</span></td>
+				</tr>
+
+				<tr>
+					<td  class="mob-des date" data-label="Дата">1</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4189/">Продукт и платформа</a>
+							<br><a href="https://events.yandex.ru/lib/people/9295914/">(Сергей Калабин)</a>
+							</li>
+							<li><a href="https://events.yandex.ru/lib/talks/4190/">Природа операционных систем</a>
+							<br><a href="https://events.yandex.ru/lib/people/9123538/">(Васюнин Николай)</a>
+							</li>	
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td  class="mob-dev date" data-label="Дата">2</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4195/"> MyFirstApp. Часть 2.</a>
+							<br><a href="https://events.yandex.ru/lib/people/9149820/">(Роман Григорьев)</a>
+							</li>
+							<li><a href="https://events.yandex.ru/lib/talks/4196/">ViewGroup</a>
+							<br><a href="https://events.yandex.ru/lib/people/9320769/">(Алексей Щербинин)</a>
+							</li>
+							
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td  class="dev date" data-label="Дата">3</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4197/">Мультимедиа: возможности браузера</a>
+							<br><a href="https://events.yandex.ru/lib/people/9348837/">(Максим Васильев)</a>
+							</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="mob-des date" data-label="Дата">8</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+							<li><a href="https://events.yandex.ru/lib/talks/4267/">Прототипирование как процесс</a>
+							<br><a href="https://events.yandex.ru/lib/people/3530628/">(Сергей Томилов</a>,
+						    <a href="https://events.yandex.ru/lib/people/9664312/">Дарья Старицына)</a>
+							</li>
+							<li><a href="https://events.yandex.ru/lib/talks/4268/">Инструмент под задачи</a>
+							<br><a href="https://events.yandex.ru/lib/people/3530628/">(Сергей Томилов</a>,
+						    <a href="https://events.yandex.ru/lib/people/9664312/">Дарья Старицына)</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td  class="mob-dev date" data-label="Дата">9</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4222/">Background</a>
+						<br><a href="https://events.yandex.ru/lib/people/9513302/">(Алексей Макаров)</a>
+						</li>
+						<li><a href="https://events.yandex.ru/lib/talks/4223/">RecyclerView</a>
+						<br><a href="https://events.yandex.ru/lib/people/9513351/">(Владимир Тагаков)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td  class="dev date" data-label="Дата">10</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4230/">Нативные приложения на веб-технологиях</a>
+						<br><a href="https://events.yandex.ru/lib/people/34/">(Сергей Бережной)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td  class="mob-des date" data-label="Дата">15</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4266/">Анимации</a>
+						<br><a href="https://events.yandex.ru/lib/people/3530628/">(Сергей Томилов</a>,
+						    <a href="https://events.yandex.ru/lib/people/9664312/">Дарья Старицына)</a>
+						    </li>
+						<li><a href="https://events.yandex.ru/lib/talks/4269/">Дополнительная лекция. Design Everything</a>
+						<br><a href="https://events.yandex.ru/lib/people/9664406/">(Rijshouwer Krijn</a>,
+						    <a href="hhttps://events.yandex.ru/lib/people/9664416/">Treub Jonas)</a>
+						</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="mob-dev date" data-label="Дата">16</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4275/">Service & Broadcasts</a>
+						<br><a href="https://events.yandex.ru/lib/people/9513302/">(Алексей Макаров)</a>
+						</li>
+						<li><a href="https://events.yandex.ru/lib/talks/4276/">Drawing</a>
+						<br><a href="https://events.yandex.ru/lib/people/9320769/">(Алексей Щербинин)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="dev date " data-label="Дата">17</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4292/">Клиентская оптимизация: базовые знания и лучшие практики</a>
+						<br><a href="https://events.yandex.ru/lib/people/9727130/">(Андрей Морозов)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="mob-des date" data-label="Дата">22</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4295/">Развите продукта</a>
+						<br><a href="https://events.yandex.ru/lib/people/664322/">(Андрей Гевак)</a>
+						</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="mob-dev date" data-label="Дата">23</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4296/">Content provider</a>
+						<br><a href="https://events.yandex.ru/lib/people/417/">(Максим Хромцов)</a>
+						</li>
+						<li><a href="https://events.yandex.ru/lib/talks/4297/">SQL&SQLite</a></li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="dev date" data-label="Дата">24</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4307/">Клиентская оптимизация: мобильные устройства и инструменты</a>
+						<br><a href="https://events.yandex.ru/lib/people/143952/">(Иван Карев)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="mob-des date" data-label="Дата">29</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4319/">Исследование интерфейсов</a>
+						<br><a href="https://events.yandex.ru/lib/people/10090355/">(Кондратьев Александр)</a>
+						</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="mob-dev date" data-label="Дата">30</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4320/">Fragments. Часть 1.</a>
+						<br><a href="https://events.yandex.ru/lib/people/10113492/">(Денис Загаевский)</a>
+						</li>
+						<li><a href="https://events.yandex.ru/lib/talks/4321/">Fragments. Часть 2.</a>
+						<br><a href="https://events.yandex.ru/lib/people/10113492/">(Денис Загаевский)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="month center" colspan="4"><span> Декабрь</span></td>
+				</tr>
+
+				<tr>
+					<td class="dev date" data-label="Дата">1</td>
+					<td class="dev" data-label="Школа разработки интерфейсов">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4323/">Инфраструктура веб-проектов</a>
+						<br><a href="https://events.yandex.ru/lib/people/10135442/">(Прокопюк Андрей)</a>
+						</li>
+						<li><a href="https://events.yandex.ru/lib/talks/4324/">Инструменты разработки мобильного фронтенда</a>
+						<br><a href="https://events.yandex.ru/lib/people/10135442/">(Прокопюк Андрей)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="mob-des date" data-label="Дата">6</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4345/">Работа в команде</a>
+						<br><a href="https://events.yandex.ru/lib/people/10270070/">(Юрий Подорожный)</a>
+						</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="mob-dev date" data-label="Дата">7</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4346/">MVP&Co</a>
+						<br><a href="https://events.yandex.ru/lib/people/10291395/">(Дмитрий Попов)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="mob-des date" data-label="Дата">13</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev empty" data-label="Школа мобильной разработки"></td>
+					<td class="mob-des" data-label="Школа мобильного дизайна">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4349/">Дополнительная лекция. Айдентика</a>
+						<br><a href="https://events.yandex.ru/lib/people/10446351/">(Дмитрий Моруз</a>,
+						    <a href="https://events.yandex.ru/lib/people/10446382/">Ждан Филиппов)</a>
+						</li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="mob-dev date" data-label="Дата">14</td>
+					<td class="dev empty" data-label="Школа разработки интерфейсов"></td>
+					<td class="mob-dev" data-label="Школа мобильной разработки">
+						<ul class="left " style="list-style: none;">
+						<li><a href="https://events.yandex.ru/lib/talks/4352/">Debugging & Polishing</a>
+						<br><a href="https://events.yandex.ru/lib/people/10682529/">(Илья Сергеев)</a>
+						</li>
+						</ul>
+					</td>
+					<td class="mob-des empty" data-label="Школа мобильного дизайна"></td>
+				</tr>
+
+				<tr>
+					<td class="date-join-course" >15</td>
+					<td class="join-lecture" colspan="3"><span>Заключительная лекция</span></td>
+				</tr>
+
+			</tbody>
+		</table>
+		</div>
+		</div>
+
+	</section>
+
+	<section id="sch-develp-intreface">
+		<div class="container">
+			<div class="row">
+				<div class="course-name">
+					<div class="center col-md-12">
+						<h3>Школа разработки интерфейсов</h3>
+					</div>
+				</div>
+
+				<div class="course-descr ">
+					<span>
+					Мы пригласили студентов вузов и начинающих специалистов, интересующихся 
+фронтенд-разработкой, развитием этого направления и готовых получать новые знания.
+
+Для поступления в школу нужно было знать HTML, CSS и JavaScript и иметь опыт разработки интерфейсов. На занятиях, среди прочего, мы поговорили про разработку для мобильных платформ с использованием веб-технологий (как для браузеров, так и для гибридных приложений).
+
+Слушателей Школы ожидало два этапа. Первый состоял из курса лекций и практических занятий в формате хакатонов. Во второй этап перешли ученики, успешно завершившие первый. Для реализации совместного проекта участники объединились в команды с менеджерами и дизайнерами из других школ Мобилизации.
+					</span>
+
+					<div class="link-course">
+						<a href="https://academy.yandex.ru/events/frontend/shri_msk-2016/">Подробнее...</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="lecturer-list center row">
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9000962/">
+							<img src="img/lecturers/DmitriyDushkin.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9000962/">Дмитрий <br> Душкин</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3  col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9348837/">
+							<img src="img/lecturers/MaximVasilyev.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9348837/">Максим <br> Васильев</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3  col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/34/">
+							<img src="img/lecturers/SergeyBerejnoy.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/34/">Сергей <br> Бережной</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9727130/">
+							<img src="img/lecturers/AnrewMorozov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9727130/">Андрей <br> Морозов</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/143952/">
+							<img src="img/lecturers/IvanKarev.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/143952/">Иван <br> Карев</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10135442/">
+							<img src="img/lecturers/AnrewProkopyk.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10135442/">Андрей <br> Прокопюк</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="sch-mob-develp">
+		<div class="container">
+			<div class="row">
+
+				<div class="course-name">
+					<div class="center col-md-12">
+						<h3>Школа мобильной разработки</h3>
+					</div>
+
+					<div class="course-descr ">
+						<span>
+						Школа была организована в рамках проекта «Мобилизация» и состояла из двух этапов.
+
+Первый представлял собой интенсивный практический курс, слушатели которого учились создавать приложения под Android. Специалисты Яндекса рассказали про современные инструменты разработки с уклоном в создание интерфейсов и анимацию.
+
+Участники, успешно завершившие первый этап, перешли во второй, где им предстояло поработать над совместным проектом со слушателями других школ Мобилизации.
+						</span>
+
+						<div class="link-course">
+							<a href="https://academy.yandex.ru/events/mobdev/msk-2016/">Подробнее...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="lecturer-list center row">
+
+				<div class="lecturer col-md-3  col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/3768719/">
+							<img src="img/lecturers/EduardMacukov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/3768719/">Эдуард <br> Мацуков</a>
+					</div>
+				</div>
+				
+				<div class="lecturer col-md-3  col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/8979250/">
+							<img src="img/lecturers/DmitriySkladnov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/8979250/">Дмитрий <br> Складнов</a>
+					</div>
+				</div>
+
+
+				<div class="lecturer col-md-3  col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9149820/">
+							<img src="img/lecturers/RomavGrigoryev.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9149820/">Роман <br> Григорьев</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9320769/">
+							<img src="img/lecturers/AlekseySherbinin.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9320769/">Алексей <br> Щербинин</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9513302/">
+							<img src="img/lecturers/AlekseyMakarov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9513302/">Алексей <br> Макаров</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9513351/">
+							<img src="img/lecturers/VladimirTagakov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9513351/">Владимир <br> Тагаков</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/417/">
+							<img src="img/lecturers/MaximChromcov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/417/">Максим <br> Хромцов</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10113492/">
+							<img src="img/lecturers/DenisZagaevskiy.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10113492/">Денис <br> Загаевский</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10291395/">
+							<img src="img/lecturers/DmitriyPopov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10291395/">Дмитрий <br> Попов</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10682529/">
+							<img src="img/lecturers/IlyaSergeev.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10682529/">Илья <br> Сергеев</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<section id="sch-mob-design">
+		<div class="container">
+			<div class="row">
+
+				<div class="course-name">
+					<div class="center col-md-12">
+						<h3>Школа мобильного дизайна</h3>
+					</div>
+					<div class="course-descr" >
+						<span>
+							Школа была организована в рамках проекта «Мобилизация» и состояла из двух этапов. Первый включал курс лекций, практические занятия и самостоятельное выполнение заданий. Слушатели узнали об особенностях дизайна мобильных продуктов, прототипировании, анимации и принципах командной работы.
+
+Участники, успешно завершившие первый этап, перешли во второй, где им предстояло выполнить совместный проект со слушателями других школ Мобилизации — менеджерами и разработчиками. На этом этапе можно было получить «боевой» опыт создания продукта.
+
+К участию в школе мы приглашали дизайнеров интерфейсов, которые хотели получить дополнительные знания и навыки по созданию именно мобильных продуктов с большой аудиторией.
+						</span>
+
+						<div class="link-course">
+							<a href="https://academy.yandex.ru/events/design/msk-2016/">Подробнее...</a>
+						</div>
+					</div>
+				</div>
+
+			<div class="lecturer-list center row">	
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/8953757/">
+							<img src="img/lecturers/AntonTen.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/8953757/">Антон <br> Тен</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9123538/">
+							<img src="img/lecturers/NikolayVasunin.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9123538/">Николай <br> Васюнин</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9295914/">
+							<img src="img/lecturers/SergeyKalabin.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9295914/">Сергей <br> Калабин</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/3530628/">
+							<img src="img/lecturers/SergeyTomilov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/3530628/">Сергей <br> Томилов</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9664312/">
+							<img src="img/lecturers/DaryaStaricina.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9664312/">Дарья <br> Старицына</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9664406/">
+							<img src="img/lecturers/RijshouwerKrijn.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9664406/">Rijshouwer <br> Krijn</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/9664416/">
+							<img src="img/lecturers/TreubJonas.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/9664416/">Treub <br> Jonas</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/664322/">
+							<img src="img/lecturers/AndrewGevak.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/664322/">Андрей <br> Гевак</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10090355/">
+							<img src="img/lecturers/AlexanderKondratiev.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10090355/">Александр <br> Кондратьев</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10270070/">
+							<img src="img/lecturers/UriyPodorojniy.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10270070/">Юрий <br> Подорожный</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10446351/">
+							<img src="img/lecturers/DmitriyMoruz.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10446351/">Дмитрий <br> Моруз</a>
+					</div>
+				</div>
+
+				<div class="lecturer col-md-3 col-sm-4 col-xs-4">
+					<div class="icon center pt">
+						<a href="https://events.yandex.ru/lib/people/10446382/">
+							<img src="img/lecturers/JdanFilippov.jpg" alt="#" class="round">
+						</a>
+						<a href="https://events.yandex.ru/lib/people/10446382/">Ждан <br> Филиппов</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="end-section">
+		<div class="container">
+			<div class="row">
+				<div class="end-section-text col-lg-4 col-md-4 col-sm-3 col-sx-3">Джавадзаде Д.Н. </div>
+				<div class=" col-lg-4 col-md-3 col-sm-3 col-sx-1"></div>
+				<div class="end-section-text col-lg-4 col-md-5 col-sm-6 col-sx-8">1 Задание Яндекс мобилизация 2017</div>
+			</div>
+		</div>
+	</section>
+
+<script src="libs/jquery/jquery-3.2.0.min.js"></script>
+<script src="appScript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,679 @@
+
+
+.pt{
+	cursor: pointer;
+}
+
+.hidden{
+	display:none;
+}
+
+.cwhite{
+	color:#ffffff;
+}
+
+.center{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	float: right;
+}
+
+.round{
+	border-radius: 100px;
+}
+
+ul{
+	padding-left:3px;
+}
+/* _______________________ Шапка Сайта _____________________________*/
+
+.menu-line{
+	padding-top:74px;
+}
+
+.header-menu ul li{
+	color: #a0a8b2;
+	display:inline-block;
+	max-width: 190px;
+	word-wrap: break-word;
+	padding-left: 10px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.header-menu ul li:hover{
+	color:#ffffff;
+}
+.head-text{
+		font-size: 36px;
+}
+.main-head{
+	background-image: url(img/header.jpg);
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	min-height: 100vh;
+}
+.head-line{
+	padding-top:184px;
+}
+.logo{
+	text-decoration: none;
+	display: inline-block;
+	width:90px;
+	font-size: 22px;
+}
+.logo a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.logo:hover{
+	color: #ffffff;
+}
+.logo a:hover{
+	color:#ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 1px;
+}
+.logo a:hover span{
+	color:red;
+}
+.navbar{
+	padding: 15px;
+}
+
+/* __________________Выпадающий список меню_____________ */
+
+.popup-menu-container .popup-menu-content {
+	display: none;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	cursor: pointer;
+	transition: opacity 0.2s ease-in;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: red;
+}
+.popup-menu-container .popup-menu-content ul{
+	list-style: none;
+	text-align: center;
+	padding-top: 38px;
+	padding-left: 0px;
+}
+.popup-menu-container .popup-menu-content ul li{
+	vertical-align: middle;
+	padding-bottom: 12px;
+    padding-top: 12px;
+    margin-top: 26px;
+    font-size: 15px;
+}
+.popup-menu-container .popup-menu-content ul li:hover{
+	background-color: #C9B087;
+	cursor: pointer;
+}
+.popup-menu-container .popup-content-btn {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	font-weight: normal;
+	right: 17px;
+	top: 6px;
+	font-size: 25px;
+}
+.popup-menu-container .popup-content-btn .fa-times{
+	color:black;	
+}
+.popup-menu-container .popup-content-btn .fa-times:hover {
+	text-shadow: 0px 0px 20px black;
+}
+.popup-menu-container #popup-menu-toggle{
+	display: none;
+}
+.popup-menu-container .popup-btn{
+	float: right;
+}
+.popup-btn{
+	cursor: pointer;
+}
+.popup-menu-container #popup-menu-toggle.active ~ .popup-menu-content, .popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-content {
+	display: block;
+	opacity: 1;
+	background-color: #fff;
+	max-width: 100%;
+	width: 100%;
+	left:0px;
+	height: 399px;
+	position: fixed;
+	top: 20%;
+	border-radius: 4px;
+	z-index: 999;
+	pointer-events: auto;
+	cursor: auto;
+	visibility: visible;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+	background-color: #fff5e2;
+}
+.popup-menu-container #popup-menu-toggle.active ~ .popup-menu-backdrop, .popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-backdrop {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+
+/*_________________________ Описание курсов____________________*/
+.courses-line{
+	padding-top:500px;
+}
+.icon{
+	display: inline-block;
+	width:100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 1px solid #5b6982;
+}
+.icon a{
+	color:#51555e;
+}
+.icon img{
+	width:100%;
+
+}
+.icon:hover {
+	border: none;	
+}
+.icon:hover a{
+	color:red;
+	text-decoration: none;
+}
+
+#sch-develp-intreface{
+	background-color: #ededed;
+	width:100%;
+	font-size: 15px;
+}
+#sch-mob-develp{
+	background-color: #e0e0e0;
+	width:100%;
+	font-size: 15px;
+}
+#sch-mob-design{
+	background-color: #eaeaea;
+	width:100%;
+	font-size: 15px;
+}
+.course-name{
+	padding-top:10px;
+}
+.course-descr{
+	padding-top:97px;
+	padding-bottom: 43px;
+}
+
+ /*________________Таблица с раписанием_________________*/
+
+.timetable-table{
+	border-collapse:collapse;
+	width: 100%;
+	margin-bottom: 130px;
+	position: relative;
+
+}
+.timetable-table th{
+	padding: 5px;
+	border: 1px solid #C9B087;
+	border-collapse: collapse;
+	font-size: 25px;
+	padding-bottom: 16px;
+}
+.timetable-table td{
+	border:1px solid #C9B087;
+	border-collapse: collapse;
+}
+.dev, .mob-dev , .mob-des{
+	width: 30%
+}
+.head-date, .date{
+	width:4%;
+}
+.month{
+	padding:5px;
+	font-weight: bolder;
+	font-size: 20px;
+	background-color: #dedfe2;
+}
+.join-lecture{
+	background-color: #fff6c4;
+	padding: 15px;
+}
+.date , .dev, .mob-dev , .mob-des{
+	text-align: center;
+	vertical-align: middle;
+} 
+.dev ul li, .mob-dev ul li , .mob-des ul li{
+	text-align: left;
+	padding-left: 6px;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.dev ul li a, .mob-dev ul li a, .mob-des ul li a{
+	color:black;
+}
+.dev ul li a:hover, .mob-dev ul li a:hover, .mob-des ul li a:hover{
+	color:red;
+}
+
+/**/
+
+#timetable{
+	display: table;
+	border-collapse: collapse;
+	width:100vw;
+	height: 1500px;
+	padding-top: 120px;
+	font-size: 15px;
+}
+.hide-timetable{
+	display: none;
+	border-collapse: collapse;
+	width:100%;
+	height: 237px;	
+}
+.link-timetable{
+	color:red;
+}
+.link-timetable:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+.lecturer-list{
+	opacity: 1;
+	padding-top:70px;
+}
+.lecturer{
+	padding-bottom:70px;
+}
+.end-section{
+	height: 150px;
+	background-color: #707070;
+}
+
+/*____________Выпадающее окно с названием курсво_______________*/
+
+.schools-list-container{
+	padding-top: 70px;
+	text-align: center;
+	display: block;
+}
+.schools-list-container div {
+	display: inline-block;
+	text-align: center;
+	width:50px;
+}
+.schools-list-container div input{
+	display:none;
+}
+.schools-list-container div:hover{
+	background-color: #C9B087;
+}
+.schools-list-btn {
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	width: 160px;
+	height: 50px;
+	line-height: 50px;
+	background: #446CB3;
+	font-size: 22px;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+	box-shadow: 0 5px 5px -5px #333;
+	transition: background 0.3s ease-in;
+	visibility: hidden;
+}
+.schools-list-btn:hover {
+	background: #365690;
+}
+.schools-list{
+	height: 0;
+	width: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	cursor: pointer;
+	transition: opacity 0.2s ease-in;
+	padding: 0px; 
+}
+.list-close-btn {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	font-weight: normal;
+	right: 17px;
+	top: 6px;
+	font-size: 25px;
+}
+.list-close-btn.fa-times{
+	color:black;	
+}
+.list-close-btn .fa-times:hover {
+	text-shadow: 0px 0px 20px black;
+}
+#schools-list-toggle{
+	display: none;
+}
+.schools-list-container #schools-list-toggle.active ~ .schools-list, .schools-list-container #schools-list-toggle:checked ~ .schools-list {
+	opacity: 1;
+	background-color: #fff;
+	max-width: 100%;
+	width: 100%;
+	height: 297px;
+	left:0px;
+	position: fixed;
+	top: 20%;
+	border-radius: 4px;
+	z-index: 999;
+	pointer-events: auto;
+	visibility: visible;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+#schools-list-toggle.active ~ .schools-list-backdrop,  #schools-list-toggle:checked ~ .schools-list-backdrop {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+.schools-list ul{
+	list-style: none;
+	text-align: center;
+	padding-top: 38px;
+	padding-left: 0px;
+}
+.schools-list ul li{
+	vertical-align: middle;
+	margin-top: 26px;
+	font-size: 15px;
+}
+.schools-list ul li label{
+	padding-bottom: 15px;
+	padding-top: 15px;
+	cursor: pointer;
+}
+.schools-list ul li:hover{
+	background-color: #C9B087;
+	cursor: pointer;
+}
+.link-course{
+	padding-top: 27px;
+	font-size: 17px;
+}
+.link-course a:hover{
+	color:red;
+}
+.navbar-nav{
+	display: none;
+}
+.popup-menu-content{
+	display: table;
+}
+
+.end-section-text{
+	font-size: 17px;
+	color: #ffffff;
+	padding-top: 63px;
+	text-align: center;
+}
+
+
+
+/*_____________________@media запросы_________________*/
+
+@media(max-width: 1199px){
+	.head-line{
+		padding-top: 181px;
+	}
+	.lecturer-list{
+		padding-bottom: 60px;
+	}
+
+	.timetable-table th{
+		font-size: 21px;
+	}
+	.month{
+		font-size: 17px;
+	}
+	.dev ul li, .mob-dev ul li, .mob-des ul li {
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 1050px){
+	.logo{
+		padding-left: 42px;
+	}
+	.bar{
+		padding-right: 48px;
+	}
+}
+
+@media(max-width: 992px){
+	.head-line{
+		padding-top: 202px;
+	}
+	.bar{
+		padding-right: 12px;
+	}
+	.fa-bars{
+		font-size: 34px;
+	}
+	.logo{
+		font-size: 23px;
+		padding-left: 9px;
+	}
+	.course-descr{
+		padding-top: 58px;
+	}
+	#timetable, #sch-mob-design, #sch-develp-intreface, #sch-mob-develp, .link-course{
+		font-size: 15px;
+	}
+	.timetable-table th{
+		font-size: 19px;
+	}
+	.month{
+		font-size: 16px;
+	}
+	.dev ul li, .mob-dev ul li, .mob-des ul li {
+		font-size: 13px;
+	}
+}
+
+@media(max-width: 768px){
+	.menu-line {
+		padding-left: 27px;
+		padding-right: 37px;
+	}
+	.logo{
+		font-size: 23px;
+	}
+	.fa-bar{
+		font-size: 43px;
+	}
+	.head-line{
+	}
+	.course-descr{
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 25px;
+	}
+	.lecturer-list{
+		display:none;
+	}
+	.navbar-nav{
+		display: none;
+	}
+	.popup-menu-content{
+		display: table;
+	}
+	.end-section-text{
+		padding-top: 30px;
+	}
+}
+
+
+@media(max-width: 659px){
+	.head-line{
+		padding-top: 222px;
+	}
+	.head-text{
+		font-size: 36px;
+	}
+	.logo{
+		padding-left: 9px;
+	}
+	.fa-bars{
+		font-size: 48px;
+	}
+	.timetable-table th{
+		font-size: 18px;
+	}
+	.schools-list{
+		visibility: hidden;
+	}
+	.schools-list-backdrop{
+		background-color: none;
+	}
+}
+
+@media(max-width: 500px){
+
+	table td{
+		display: block;
+		padding: 40%;	
+	}
+	.timetable-table {
+		margin-top:21px;
+	}
+	.timetable-table td{
+		padding:5px;
+	}
+	.timetable-table td:before{
+		content: attr(data-label);
+		position: static;
+		display: none;
+		background-color: #ccc;
+	}
+	.empty{
+		display: none;
+	}
+	.timetable-table th{
+		font-size: 20px;
+		border:none;
+		padding-bottom: 14px;
+	}
+	.timetable-table td{
+		border-collapse: collapse;
+		font-size: 15px;	
+	}
+	.head-date{
+		font-size: 18px;
+	}
+	#sch-mob-design, #sch-develp-intreface, #sch-mob-develp, .link-course{
+		font-size: 13px;
+	}
+	.course-name h3{
+		font-size: 19px;
+	}
+	.timetable-table .date:nth-child(odd) {
+		background-color: #dedfe2;
+	}
+	.mob-dev, .mob-des, .head-date{
+		display: none;
+	}
+	.dev, .mob-dev , .mob-des, .date{
+		width: 100%;
+	}
+	.dev ul li, .mob-dev ul li , .mob-des ul li{
+		text-align: center;
+	}
+	.schools-list-btn{
+		visibility: visible;
+	}
+	.month{
+		background-color: #dedfe2;
+		font-size: 17px;
+	}
+	.logo{
+		font-size: 20px;
+		padding-left: 9px;
+	}
+	.fa-bars{
+		font-size: 62px;
+	}
+	.head-line{
+		padding-top: 230px;
+	}
+	.head-text {
+    	font-size: 33px;
+	}
+	.hide-timetable{
+		display: table;
+		font-size: 17px;
+	}
+	.date-join-course{
+		background-color: #dedfe2;
+	}
+	.join-lecture{
+		background-color: #ffffff;
+	}
+	.schools-list-container{
+		display: block;
+	}
+	.table{
+		padding-top: 40px;
+	}
+	.end-section-text{
+		font-size: 15px;
+	}	
+}
+
+@media(max-width: 454px){
+	.trow .col ul li{
+		width:75vw;
+		text-align: center;
+		vertical-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
