@@ -615,6 +615,9 @@ ul{
 	.list-close-btn , .popup-menu-container .popup-content-btn{
     	font-size: 50px;
 	}
+	.lecturer-list{
+		display:none;
+	}
 
 	table td{
 		display: block;
