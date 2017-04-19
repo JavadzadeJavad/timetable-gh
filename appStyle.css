@@ -518,7 +518,7 @@ ul{
 		padding-right: 37px;
 	}
 	.logo{
-		font-size: 50px;
+		font-size: 23px;
 	}
 	.fa-bar{
 		font-size: 43px;
@@ -553,13 +553,17 @@ ul{
 		padding-top: 222px;
 	}
 	.head-text{
-		font-size: 36px;
+		font-size: 46px;
+	}
+	.header-menu ul li{
+		font-size: 30px;
 	}
 	.logo{
+		font-size: 50px;
 		padding-left: 9px;
 	}
 	.fa-bars{
-		font-size: 48px;
+		font-size: 60px;
 	}
 	.timetable-table th{
 		font-size: 18px;
