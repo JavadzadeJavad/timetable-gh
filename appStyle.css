@@ -517,15 +517,11 @@ ul{
 		padding-left: 27px;
 		padding-right: 37px;
 	}
-
-	.header-menu ul li{
-		font-size: 35px;
-	}
 	.logo{
-		font-size: 50px;
+		font-size: 23px;
 	}
 	.fa-bar{
-		font-size: 50px;
+		font-size: 43px;
 	}
 	.head-line{
 	}
@@ -557,14 +553,13 @@ ul{
 		padding-top: 222px;
 	}
 	.head-text{
-		font-size: 46px;
+		font-size: 36px;
 	}
 	.logo{
-		font-size: 50px;
 		padding-left: 9px;
 	}
 	.fa-bars{
-		font-size: 60px;
+		font-size: 48px;
 	}
 	.timetable-table th{
 		font-size: 18px;
@@ -578,6 +573,15 @@ ul{
 }
 
 @media screen and (max-device-width: 600px){
+	.popup-menu-content ul li p{
+		font-size: 40px;
+	}
+	.popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-content {
+		height: 560px;
+	}
+	.fa-times{
+		font-size: 2em;
+	}
 
 	table td{
 		display: block;
@@ -636,17 +640,18 @@ ul{
 		font-size: 17px;
 	}
 	.logo{
-		font-size: 20px;
+		font-size: 60px;
 		padding-left: 9px;
 	}
 	.fa-bars{
-		font-size: 62px;
+		font-size: 5em;
 	}
+	
 	.head-line{
 		padding-top: 230px;
 	}
 	.head-text {
-    	font-size: 33px;
+    	font-size: 50px;
 	}
 	.hide-timetable{
 		display: table;
