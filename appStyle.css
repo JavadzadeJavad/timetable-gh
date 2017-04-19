@@ -603,19 +603,19 @@ ul{
 		display: none;
 	}
 	.timetable-table th{
-		font-size: 20px;
+		font-size: 43px;
 		border:none;
 		padding-bottom: 14px;
 	}
 	.timetable-table td{
 		border-collapse: collapse;
-		font-size: 15px;	
+		font-size: 38px;	
 	}
 	.head-date{
 		font-size: 18px;
 	}
 	#sch-mob-design, #sch-develp-intreface, #sch-mob-develp, .link-course{
-		font-size: 13px;
+		font-size: 30px;
 	}
 	.course-name h3{
 		font-size: 19px;
@@ -631,6 +631,7 @@ ul{
 	}
 	.dev ul li, .mob-dev ul li , .mob-des ul li{
 		text-align: center;
+		font-size: 30px;
 	}
 	.schools-list-btn{
 		visibility: visible;
@@ -652,10 +653,6 @@ ul{
 	}
 	.head-text {
     	font-size: 65px;
-	}
-	.hide-timetable{
-		display: table;
-		font-size: 17px;
 	}
 	.date-join-course{
 		background-color: #dedfe2;
