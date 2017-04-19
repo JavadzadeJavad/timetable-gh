@@ -487,7 +487,6 @@ ul{
 
 @media screen and (max-device-width:991px){
 
-
 	.head-line{
 		padding-top: 202px;
 	}
@@ -520,9 +519,18 @@ ul{
 		font-size: 15px;
 	}
 
+	.end-section {
+    	height: 152px;
+	}
+	.end-section-text{
+		font-size: 20px;
+		padding-top:28px;
+		display: block;
+	}
+
 }
 
-@media screen and (max-device-width:767px){
+/*@media screen and (max-device-width:767px){
 	.menu-line {
 		padding-left: 27px;
 		padding-right: 37px;
@@ -556,8 +564,8 @@ ul{
 	
 	
 }
-
-
+*/
+/*
 @media screen and (max-device-width: 659px){
 	.head-line{
 		padding-top: 222px;
@@ -580,9 +588,9 @@ ul{
 	.schools-list-backdrop{
 		background-color: none;
 	}
-}
+}*/
 
-@media screen and (max-device-width: 600px){
+@media screen and (max-device-width: 767px){
 	.popup-menu-content ul li p, .schools-list ul li p{
 		font-size: 35px;
 	}
@@ -697,6 +705,7 @@ ul{
 	}
 	.end-section-text{
 		font-size: 30px;
+		padding-top:28px;
 		display: block;
 	}	
 }
