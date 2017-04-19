@@ -577,7 +577,7 @@ ul{
 		font-size: 35px;
 	}
 	.popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-content {
-		height: 560px;
+		height: 528px;
 	}
 	.fa-times{
 		font-size: 2em;
@@ -637,7 +637,7 @@ ul{
 	}
 	.month{
 		background-color: #dedfe2;
-		font-size: 17px;
+		font-size: 30px;
 	}
 	.logo{
 		font-size: 40px;
