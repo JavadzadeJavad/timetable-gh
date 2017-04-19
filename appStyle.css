@@ -680,6 +680,9 @@ ul{
 	.table{
 		padding-top: 40px;
 	}
+	.end-section {
+    	height: 180px;
+	}
 	.end-section-text{
 		font-size: 30px;
 		display: block;
