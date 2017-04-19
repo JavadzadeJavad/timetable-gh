@@ -577,11 +577,14 @@ ul{
 }
 
 @media screen and (max-device-width: 600px){
-	.popup-menu-content ul li p{
+	.popup-menu-content ul li p, .schools-list ul li p{
 		font-size: 35px;
 	}
 	.popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-content {
 		height: 528px;
+	}
+	.schools-list-container #schools-list-toggle:checked ~ .schools-list {
+		height: 457px;
 	}
 	.fa-times{
 		font-size: 2em;
@@ -590,8 +593,8 @@ ul{
 		font-size: 34px;
 	}
 	.course-name {
-    padding-top: 58px;
-}
+    	padding-top: 58px;
+	}
 
 	table td{
 		display: block;
