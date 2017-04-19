@@ -117,7 +117,7 @@ ul{
 	padding-bottom: 11px;
     padding-top: 11px;
     margin-top: 26px;
-    font-size: 15px;
+    font-size: 17px;
 }
 .popup-menu-container .popup-menu-content ul li:hover{
 	background-color: #C9B087;
@@ -486,6 +486,8 @@ ul{
 }
 
 @media screen and (max-device-width:991px){
+
+
 	.head-line{
 		padding-top: 202px;
 	}
@@ -499,8 +501,11 @@ ul{
 		font-size: 23px;
 		padding-left: 9px;
 	}
+	.course-name{
+		padding-top: 29px;
+	}
 	.course-descr{
-		padding-top: 58px;
+		padding-top: 29px;
 	}
 	#timetable, #sch-mob-design, #sch-develp-intreface, #sch-mob-develp, .link-course{
 		font-size: 15px;
@@ -512,7 +517,7 @@ ul{
 		font-size: 16px;
 	}
 	.dev ul li, .mob-dev ul li, .mob-des ul li {
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 }
@@ -586,6 +591,9 @@ ul{
 	}
 	.schools-list-container #schools-list-toggle:checked ~ .schools-list {
 		height: 457px;
+	}
+	.popup-btn{
+		font-size: 2em;
 	}
 	.fa-times{
 		font-size: 2em;
