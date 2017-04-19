@@ -586,6 +586,12 @@ ul{
 	.fa-times{
 		font-size: 2em;
 	}
+	.join-lecture span{
+		font-size: 34px;
+	}
+	.course-name {
+    padding-top: 58px;
+}
 
 	table td{
 		display: block;
@@ -622,8 +628,9 @@ ul{
 		font-size: 30px;
 	}
 	.course-name h3{
-		font-size: 47px;
+		font-size: 44px;
 	}
+
 	.timetable-table .date:nth-child(odd) {
 		background-color: #dedfe2;
 	}
@@ -635,7 +642,7 @@ ul{
 	}
 	.dev ul li, .mob-dev ul li , .mob-des ul li{
 		text-align: center;
-		font-size: 30px;
+		font-size: 34px;
 	}
 	.schools-list-btn{
 		visibility: visible;
