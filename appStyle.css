@@ -574,7 +574,7 @@ ul{
 
 @media screen and (max-device-width: 600px){
 	.popup-menu-content ul li p{
-		font-size: 40px;
+		font-size: 35px;
 	}
 	.popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-content {
 		height: 560px;
@@ -640,7 +640,7 @@ ul{
 		font-size: 17px;
 	}
 	.logo{
-		font-size: 60px;
+		font-size: 40px;
 		padding-left: 9px;
 	}
 	.fa-bars{
@@ -651,7 +651,7 @@ ul{
 		padding-top: 230px;
 	}
 	.head-text {
-    	font-size: 50px;
+    	font-size: 65px;
 	}
 	.hide-timetable{
 		display: table;
