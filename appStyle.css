@@ -633,6 +633,9 @@ ul{
 	#sch-mob-design, #sch-develp-intreface, #sch-mob-develp, .link-course{
 		font-size: 30px;
 	}
+	.link-course{
+		padding-bottom: 58px;
+	}
 	.course-name h3{
 		font-size: 44px;
 	}
