@@ -595,6 +595,9 @@ ul{
 	.course-name {
     	padding-top: 58px;
 	}
+	.list-close-btn , .popup-menu-container .popup-content-btn{
+    	font-size: 50px;
+	}
 
 	table td{
 		display: block;
