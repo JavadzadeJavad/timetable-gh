@@ -37,7 +37,9 @@ ul{
 .menu-line{
 	padding-top:74px;
 }
-
+.header-menu, .logo{
+	padding-top: 10px;
+}
 .header-menu ul li{
 	color: #a0a8b2;
 	display:inline-block;
@@ -304,7 +306,7 @@ ul{
 }
 .lecturer-list{
 	opacity: 1;
-	padding-top:70px;
+	padding-top:10px;
 }
 .lecturer{
 	padding-bottom:70px;
@@ -317,7 +319,6 @@ ul{
 /*____________Выпадающее окно с названием курсво_______________*/
 
 .schools-list-container{
-	padding-top: 70px;
 	text-align: center;
 	display: block;
 }
@@ -663,9 +664,6 @@ ul{
 	.logo{
 		font-size: 40px;
 		padding-left: 9px;
-	}
-	.fa-bars{
-		font-size: 5em;
 	}
 	
 	.head-line{
