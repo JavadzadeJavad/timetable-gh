@@ -70,6 +70,7 @@ ul{
 	display: inline-block;
 	width:90px;
 	font-size: 22px;
+	padding-top: 10px;
 }
 .logo a{
 	text-decoration: none;
@@ -149,6 +150,7 @@ ul{
 }
 .popup-btn{
 	cursor: pointer;
+	padding-top: 10px;
 }
 .popup-menu-container #popup-menu-toggle.active ~ .popup-menu-content, .popup-menu-container #popup-menu-toggle:checked ~ .popup-menu-content {
 	display: block;
