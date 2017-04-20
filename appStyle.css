@@ -37,7 +37,7 @@ ul{
 .menu-line{
 	padding-top:74px;
 }
-.header-menu, .logo{
+.header-menu{
 	padding-top: 10px;
 }
 .header-menu ul li{
@@ -131,6 +131,9 @@ ul{
 	right: 17px;
 	top: 6px;
 	font-size: 25px;
+}
+.scrollTo-timetable p{
+	margin: 5px 0 5px 0;
 }
 .popup-menu-container .popup-content-btn .fa-times{
 	color:black;	
@@ -291,12 +294,6 @@ ul{
 	padding-top: 120px;
 	font-size: 15px;
 }
-.hide-timetable{
-	display: none;
-	border-collapse: collapse;
-	width:100%;
-	height: 237px;	
-}
 .link-timetable{
 	color:red;
 }
@@ -350,6 +347,9 @@ ul{
 	box-shadow: 0 5px 5px -5px #333;
 	transition: background 0.3s ease-in;
 	visibility: hidden;
+}
+.develp-intreface p{
+	margin: 5px 0 5px 0;
 }
 .schools-list-btn span{
 	font-size: 40px;
@@ -449,8 +449,14 @@ ul{
 .end-section-text{
 	font-size: 17px;
 	color: #ffffff;
-	padding-top: 63px;
+	
+	padding-top: 8px;
+	padding-bottom: 16px;
 	text-align: center;
+	display: block;
+}
+.space{
+	padding-top: 37px;
 }
 
 
@@ -476,14 +482,6 @@ ul{
 	}
 }
 
-@media screen and (max-device-width: 1050px){
-	.logo{
-		padding-left: 42px;
-	}
-	.bar{
-		padding-right: 48px;
-	}
-}
 
 @media screen and (max-device-width:991px){
 
@@ -525,70 +523,15 @@ ul{
 	.end-section-text{
 		font-size: 20px;
 		padding-top:28px;
+		padding-bottom: 0px;
 		display: block;
 	}
+	.space{
+		padding-top: 0px;
+	}
 
 }
 
-/*@media screen and (max-device-width:767px){
-	.menu-line {
-		padding-left: 27px;
-		padding-right: 37px;
-	}
-	.logo{
-		font-size: 23px;
-	}
-	.fa-bar{
-		font-size: 43px;
-	}
-	.head-line{
-	}
-	.course-descr{
-		padding-left: 25px;
-		padding-right: 25px;
-		padding-bottom: 25px;
-	}
-	.lecturer-list{
-		display:none;
-	}
-	.navbar-nav{
-		display: none;
-	}
-	.popup-menu-content{
-		display: table;
-	}
-	.end-section-text{
-		padding-top: 30px;
-	}
-
-	
-	
-}
-*/
-/*
-@media screen and (max-device-width: 659px){
-	.head-line{
-		padding-top: 222px;
-	}
-	.head-text{
-		font-size: 36px;
-	}
-	.logo{
-		padding-left: 9px;
-	}
-	.fa-bars{
-		font-size: 48px;
-	}
-	.timetable-table th{
-		font-size: 18px;
-	}
-	.schools-list{
-		visibility: hidden;
-	}
-	.schools-list-backdrop{
-		background-color: none;
-	}
-}*/
 
 @media screen and (max-device-width: 767px){
 	.popup-menu-content ul li p, .schools-list ul li p{
@@ -708,25 +651,5 @@ ul{
 	}
 	.end-section-text{
 		font-size: 30px;
-		padding-top:28px;
-		display: block;
 	}	
 }
-
-@media screen and (max-device-width: 454px){
-	.trow .col ul li{
-		width:75vw;
-		text-align: center;
-		vertical-align: center;
-	}
-}
-
-
-
-
-
-
-
-
-
-
